@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+content = "#{Faker::Lorem.sentence(100)}
+![](http://lorempixel.com/800/300/city/)
+#{Faker::Lorem.sentence(100)}
+"
+
+20.times do
+  Article.create(title: Faker::Lorem.sentence(7), content: content)
+end

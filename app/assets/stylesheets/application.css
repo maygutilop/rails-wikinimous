@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+ @import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+
+ .container img {
+   max-width: 100%;
+ }
+
+ .markdown {
+   font-family: monospace;
+   font-size: 16px;
+   background-color: #FDF6E2;
+ }
+
+ .markdown:focus {
+     background-color: #FDF6E2;
+ }

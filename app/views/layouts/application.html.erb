@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsWikinimous</title>
+    <title>Wikinimous</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,13 @@
   </head>
 
   <body>
+      <header class="bg-light mb-5 px-4 py-3 border-bottom d-flex sticky-top justify-content-between align-items-center">
+      <%= link_to "Wikinimous", articles_path, class: 'm-0 text-muted h4 text-decoration-none' %>
+      <%= link_to "New Article", new_article_path, class: 'btn btn-primary m-0' %>
+    </header>
     <%= yield %>
+    <footer class="bg-dark mt-5 p-5 text-center">
+      <p class="text-white m-0">Made in Spain @ Le Wagon</p>
+    </footer>
   </body>
 </html>
